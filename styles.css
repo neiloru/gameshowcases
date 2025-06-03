@@ -141,7 +141,7 @@ body {
     padding-left: 10px;
     display: flex;
     background-color: #FFFFFF;
-    mask: url('./resources/twitch.svg');
+    mask: url('https://neiloru.github.io/gameshowcases/resources/twitch.svg');
     mask-position: right;
     mask-repeat: no-repeat;
 
@@ -158,7 +158,7 @@ body {
     padding-left: 10px;
     display: flex;
     background-color: #FFFFFF;
-    mask: url('./resources/youtube.svg');
+    mask: url('https://neiloru.github.io/gameshowcases/resources/youtube.svg');
     mask-position: right;
     mask-repeat: no-repeat;
     height: 40px;
