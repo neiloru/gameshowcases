@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 2000px;
+    margin: 50px auto;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.box {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(14, 250, 205, 1);
+    box-shadow: 0 0 10px rgba(14, 250, 205, 0.05);
+    width: calc(25% - 20px);
+    min-height: 225px;
+    max-height: 225px;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 400px;
+    background-size: cover;
+
+}
+
+.box span {
+    position: absolute;
+    padding: 5px 10px;
+
+    border-radius: 3px;
+}
+
+.date {
+    border-radius: 10px!important;
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 85px;
+    max-height: 85px;
+
+    background-color: rgba(60, 60, 60, 1);
+    top: 10px;
+    left: 10px;
+
+    box-shadow: 0 0 5px rgba(14, 250, 205, 1);
+}
+
+.time {
+    min-width: 75px;
+    max-width: 75px;
+    border-radius: 10px!important;
+    text-align: center;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(14, 250, 205, 1);
+    color: rgba(36, 85, 74, 1);
+    font-weight: bold;
+    font-size: larger;
+
+    box-shadow: 0 0 5px rgba(14, 250, 205, 1);
+
+}
+
+.month {
+    text-align: center;
+    border-radius: 10px 10px 0 0!important;
+    background-color: rgba(31, 31, 31, 1);
+
+    top: 0px;
+    left: 0px;
+
+    width: 75px;
+    height: 15px;
+
+
+    color: rgba(255, 255, 255, 1);
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.monthText{
+    position: relative;
+    top: -30px;
+
+}
+
+.day {
+    text-align: center;
+    bottom: 15px;
+    left: 0;
+
+    width: 75px;
+    height: 50px;
+
+    color: rgba(14, 250, 205, 1);
+    font-size: 45pt;
+
+}
+
+.showcaseName {
+    color: rgb(255, 255, 255, 1);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+    bottom: 5px;
+    right: 5px;
+    font-weight: bold;
+    text-align: right;
+    font-size: x-large;
+    min-width: 100px;
+    max-width: 250px;
+}
+
+.links {
+
+    display: flex;
+
+
+    margin-top: 10px;
+
+    height: 40px;
+
+
+
+    color: rgb(255, 255, 255, 1);
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
+    top: 5px;
+    right: 5px;
+    font-weight: bold;
+    text-align: right;
+    font-size: x-large;
+}
+
+.twitch {
+    padding-left: 10px;
+    display: flex;
+    background-color: #FFFFFF;
+    mask: url('./resources/twitch.svg');
+    mask-position: right;
+    mask-repeat: no-repeat;
+
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+
+
+}
+
+.youtube {
+
+    padding-left: 10px;
+    display: flex;
+    background-color: #FFFFFF;
+    mask: url('./resources/youtube.svg');
+    mask-position: right;
+    mask-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+
+/* Responsive: 2 per row on small screens */
+@media (max-width: 768px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+}
+
+#stateofunreal {
+
+
+}
