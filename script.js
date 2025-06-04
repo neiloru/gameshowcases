@@ -35,7 +35,7 @@ async function loadData() {
             duration = data[i].duration;
         }
 
-        let dateWith2Weeks = new Date(date.getTime() + duration*60000 + 14 * 24 * 60 * 60 * 1000);
+        let dateWith2Weeks = new Date(date.getTime() + duration*60000 + 7 * 24 * 60 * 60 * 1000);
         let dateWithDuration = new Date(date.getTime() + duration*60000);
         let dateNow = new Date();
 
@@ -92,7 +92,7 @@ async function loadData() {
         div.appendChild(dateSpan);
 
         let timeSpan = document.createElement("span");
-        timeSpan.className = getClassName("time", isLive, isOld);;
+        timeSpan.className = getClassName("time", isLive, isOld);
 
         if(isLive)
         {

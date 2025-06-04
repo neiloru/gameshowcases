@@ -1,7 +1,17 @@
+
+.radio-canada-f {
+  font-family: "Radio Canada", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Radio Canada", sans-serif;
     background-image: linear-gradient(to bottom, rgba(55, 55, 55, 1), rgba(68, 68, 68, 1));
 
 }
@@ -14,6 +24,16 @@ body {
     margin: 50px auto;
     gap: 20px;
     padding: 0 10px;
+}
+
+.header {
+    overflow: hidden;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(14, 250, 205, 0), rgba(14, 250, 205, 0), rgba(14, 250, 205, 1), rgba(14, 250, 205, 1)), url('https://neiloru.github.io/gameshowcases/resources/thumbnails/sgfpartners.jpg');
+    background-position: top left, -25rem -15rem, top left;
+    background-repeat:no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+
 }
 
 .box {
@@ -204,7 +224,7 @@ body {
 
 .day {
     text-align: center;
-    bottom: 15px;
+    bottom: 17px;
     left: 0;
     width: 75px;
     height: 50px;
@@ -214,7 +234,7 @@ body {
 
 .dayold {
     text-align: center;
-    bottom: 15px;
+    bottom: 17px;
     left: 0;
     width: 75px;
     height: 50px;
@@ -224,7 +244,7 @@ body {
 
 .daylive {
     text-align: center;
-    bottom: 15px;
+    bottom: 17px;
     left: 0;
     width: 75px;
     height: 50px;
@@ -282,6 +302,30 @@ body {
     cursor: pointer;
 }
 
+.headerTitle {
+    margin-top: 0; 
+    font-size: xxx-large; 
+    text-align: right; 
+    padding-right: 40px; 
+    padding-top: 25px; 
+    margin-bottom: 10px; 
+    color: white;
+    filter: drop-shadow(2px 0 black) drop-shadow(-2px 0 black) drop-shadow(0 2px black) drop-shadow(0 -2px black) 
+}
+
+.headerText {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.headerLinks {
+    text-decoration: none; 
+    color: rgba(33, 33, 33, 1); 
+    font-weight: bold; 
+    font-size: large;
+}
 
 
 
