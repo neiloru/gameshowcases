@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-width: 540px;
     max-width: 2000px;
     margin: 50px auto;
     gap: 20px;
@@ -33,6 +34,7 @@ body {
     background-position: top left, -25rem -15rem, top left;
     background-repeat:no-repeat;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    min-width: 540px;
 
 }
 
