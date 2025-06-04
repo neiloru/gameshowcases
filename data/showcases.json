@@ -74,7 +74,8 @@
   },
   {
     "name": "Summer Game Fest 2025",
-    "datetime": "2025/06/06 18:00:00 +0000",
+    "datetime": "2025/06/06 21:00:00 +0000",
+    "duration": "120",
     "background": "https://motekgames.de/wp-content/uploads/2025/05/Summer_Game_Fest_25_05_20_01.jpg",
     "links":
     [
@@ -91,6 +92,7 @@
   {
     "name": "Day of the Devs",
     "datetime": "2025/06/06 23:00:00 +0000",
+    "duration": "120",
     "background": "https://cdn2.unrealengine.com/day-of-the-devs-summer-game-fest-edition-2025-3841x2160-a08e756317bb.jpg",
     "links":
     [
@@ -107,6 +109,7 @@
   {
     "name": "BALL x PIT",
     "datetime": "2025/06/07 00:00:00 +0000",
+    "duration": "30",
     "background": "https://www.gematsu.com/wp-content/uploads/2025/05/Ball-x-Pit-Ann_05-30-25.jpg",
     "links":
     [
@@ -138,7 +141,8 @@
   },
   {
     "name": "Wholesome Direct",
-    "datetime": "2025/06/07 16:00:00 +0000",
+    "datetime": "2025/06/07 15:45:00 +0000",
+    "duration": "60",
     "background": "https://i.ytimg.com/vi/lQ9UtxZLKRM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWDeqvV2TjIyj0GbR0MsOgfbT6Zg",
     "links":
     [
@@ -151,6 +155,7 @@
   {
     "name": "Women-Led Games",
     "datetime": "2025/06/07 17:00:00 +0000",
+    "duration": "60",
     "background": "https://clan.fastly.steamstatic.com/images/43765559/dc58b1abd3964d82e6a95c10f62d8711b07c7105.png",
     "links":
     [
@@ -163,18 +168,20 @@
   {
     "name": "Latin American Games Showcase",
     "datetime": "2025/06/07 18:00:00 +0000",
+    "duration": "60",
     "background": "https://s.yimg.com/ny/api/res/1.2/CAonlblWF2hTP5bu8EZDLQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://s.yimg.com/os/creatr-uploaded-images/2025-05/9a3b2890-3e41-11f0-b1bf-6a98eb3b1402",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/@LAGShowcase"
+        "link": "https://www.youtube.com/watch?v=80xGaa_g-Zo"
       }
     ]
   },
   {
     "name": "South East Asian Games Showcase",
-    "datetime": "2025/06/07 19:00:00 +0000",
+    "datetime": "2025/06/07 18:55:00 +0000",
+    "duration": "60",
     "background": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYStq3ModL0RUksykn2GZD3iXU3Nz5iraUg&s",
     "links":
     [
@@ -196,7 +203,7 @@
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/@FutureGamesShow/featured"
+        "link": "https://www.youtube.com/watch?v=3F3ivfA7-Vg"
       },
       {
         "site": "twitch",
@@ -207,24 +214,26 @@
   {
     "name": "Green Games Showcase",
     "datetime": "2025/06/07 20:00:00 +0000",
+    "duration": "60",
     "background": "https://cdn2.unrealengine.com/68371d96cab84f2dfe44ecc0-green-games-showcase-announcement-image-1920x1080-dfc7a2f3d75c.png",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/@thegameawards"
+        "link": "https://www.youtube.com/watch?v=nvF-u7TU_to"
       }
     ]
   },
   {
     "name": "Frosty Games Fest Showcase",
     "datetime": "2025/06/07 23:00:00 +0000",
+    "duration": "60",
     "background": "https://cdn2.unrealengine.com/68371ca13e650416b28dc8f9-frostygamesfest-keyart-1920x1080px-v2-1920x1080-661fc38a54a4.png",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/@FrostyGamesFest"
+        "link": "https://www.youtube.com/watch?v=3ff3YxX7Cgw"
       },
       {
         "site": "twitch",
@@ -235,12 +244,13 @@
   {
     "name": "Xbox Games Showcase + The Outer Worlds 2 Direct",
     "datetime": "2025/06/08 17:00:00 +0000",
+    "duration": "120",
     "background": "https://cdn2.unrealengine.com/xbox-games-showcase-2025-1920x1080-1a5b9e915153.jpg",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/user/xbox/hub"
+        "link": "https://www.youtube.com/watch?v=_M3QwLBrg8g"
       },
       {
         "site": "twitch",
@@ -251,6 +261,7 @@
   {
     "name": "PC Gaming Show",
     "datetime": "2025/06/08 19:00:00 +0000",
+    "duration": "60",
     "background": "https://cdn2.unrealengine.com/pc-gaming-show-2025-4096x2304-b31698d00621.jpg",
     "links":
     [
@@ -266,25 +277,26 @@
   },
   {
     "name": "Death Stranding 2 Game Premiere",
-    "datetime": "2025/06/09 1:00:00 +0000",
+    "datetime": "2025/06/09 2:00:00 +0000",
     "background": "https://preview.redd.it/ds2-game-premiere-live-stream-v0-5u38xujy4x3f1.jpeg?width=1080&crop=smart&auto=webp&s=a3050216131560eb661d193003d51bdb86c94d08",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/watch?v=ZpqSt2sirRI"
+        "link": "https://www.youtube.com/watch?v=gOV2Rx-ncxM"
       }
     ]
   },
   {
     "name": "Black Voices in Gaming",
     "datetime": "2025/06/09 16:00:00 +0000",
+    "duration": "60",
     "background": "https://clan.cloudflare.steamstatic.com/images/30894338/4a023ffc5f138cf64117ce9cfa2802f337249329.jpg",
     "links":
     [
       {
         "site": "youtube",
-        "link": "https://www.youtube.com/thegameawards"
+        "link": "https://www.youtube.com/watch?v=J3ZsxX49Tig"
       }
     ]
   },
@@ -303,12 +315,13 @@
   {
     "name": "State of Play",
     "datetime": "2025/06/04 21:00:00 +0000",
+    "duration": "40",
     "background": "https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:uxvdusz3e6eqapsbaf7eue5u/bafkreiewpki76z3nvrhbeblkfj3sd3f4qc2pu35f5nqkbcptumyns4ocoe@jpeg",
     "links":
     [
       {
         "site": "youtube",
-        "link": "http://play.st/YouTube"
+        "link": "https://www.youtube.com/watch?v=1bYaEtALe00"
       },
       {
         "site": "twitch",
