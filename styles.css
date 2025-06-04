@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
+    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 1), rgba(68, 68, 68, 1));
+
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     position: relative;
     background-color: white;
     border: 1px solid rgba(14, 250, 205, 1);
-    box-shadow: 0 0 10px rgba(14, 250, 205, 0.05);
+    box-shadow: 0 0 10px rgba(14, 250, 205, 0.2);
     width: calc(25% - 20px);
     min-height: 225px;
     max-height: 225px;
@@ -29,13 +30,66 @@ body {
     min-width: 400px;
     max-width: 400px;
     background-size: cover;
+}
 
+.box:hover {
+    transform: scale(1.05);
+}
+
+.boxold {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgba(100, 100, 100, 1);
+    width: calc(25% - 20px);
+    min-height: 225px;
+    max-height: 225px;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 400px;
+    background-size: cover;
+}
+
+.boxold:hover {
+    transform: scale(1.05);
+}
+
+.boxlive {
+    position: relative;
+    background-color: white;
+    border: 1px solid rgb(218, 42, 11);
+    box-shadow: 0 0 10px rgba(218, 42, 11, 0.2);
+    width: calc(25% - 20px);
+    min-height: 225px;
+    max-height: 225px;
+    font-size: 14px;
+    overflow: hidden;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 400px;
+    background-size: cover;
+}
+
+.boxlive:hover {
+    transform: scale(1.05);
 }
 
 .box span {
     position: absolute;
     padding: 5px 10px;
+    border-radius: 3px;
+}
 
+.boxold span {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.boxlive span {
+    position: absolute;
+    padding: 5px 10px;
     border-radius: 3px;
 }
 
@@ -45,12 +99,34 @@ body {
     max-width: 75px;
     min-height: 85px;
     max-height: 85px;
-
     background-color: rgba(60, 60, 60, 1);
     top: 10px;
     left: 10px;
-
     box-shadow: 0 0 5px rgba(14, 250, 205, 1);
+}
+
+.dateold {
+    border-radius: 10px!important;
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 85px;
+    max-height: 85px;
+    background-color: rgba(60, 60, 60, 1);
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 0 5px rgba(180, 180, 180, 1);
+}
+
+.datelive {
+    border-radius: 10px!important;
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 85px;
+    max-height: 85px;
+    background-color: rgb(255, 255, 255);
+    top: 10px;
+    left: 10px;
+    box-shadow: 0 0 5px rgba(218, 42, 11, 1);
 }
 
 .time {
@@ -64,23 +140,58 @@ body {
     color: rgba(36, 85, 74, 1);
     font-weight: bold;
     font-size: larger;
-
     box-shadow: 0 0 5px rgba(14, 250, 205, 1);
+}
 
+.timeold {
+    min-width: 75px;
+    max-width: 75px;
+    border-radius: 10px!important;
+    text-align: center;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(180, 180, 180, 1);
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    font-size: larger;
+    box-shadow: 0 0 5px rgba(180, 180, 180, 1);
+}
+
+.timelive {
+    min-width: 75px;
+    max-width: 75px;
+    border-radius: 10px!important;
+    text-align: center;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(218, 42, 11);
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: larger;
+    box-shadow: 0 0 5px rgb(218, 42, 11);
 }
 
 .month {
     text-align: center;
     border-radius: 10px 10px 0 0!important;
     background-color: rgba(31, 31, 31, 1);
-
     top: 0px;
     left: 0px;
-
     width: 75px;
     height: 15px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18pt;
+    font-weight: bold;
+}
 
-
+.monthlive {
+    text-align: center;
+    border-radius: 10px 10px 0 0!important;
+    background-color: rgb(218, 42, 11);
+    top: 0px;
+    left: 0px;
+    width: 75px;
+    height: 15px;
     color: rgba(255, 255, 255, 1);
     font-size: 18pt;
     font-weight: bold;
@@ -89,21 +200,38 @@ body {
 .monthText{
     position: relative;
     top: -30px;
-
 }
 
 .day {
     text-align: center;
     bottom: 15px;
     left: 0;
-
     width: 75px;
     height: 50px;
-
     color: rgba(14, 250, 205, 1);
     font-size: 45pt;
-
 }
+
+.dayold {
+    text-align: center;
+    bottom: 15px;
+    left: 0;
+    width: 75px;
+    height: 50px;
+    color: rgb(180, 180, 180);
+    font-size: 45pt;
+}
+
+.daylive {
+    text-align: center;
+    bottom: 15px;
+    left: 0;
+    width: 75px;
+    height: 50px;
+    color: rgb(218, 42, 11);
+    font-size: 45pt;
+}
+
 
 .showcaseName {
     color: rgb(255, 255, 255, 1);
@@ -118,16 +246,9 @@ body {
 }
 
 .links {
-
     display: flex;
-
-
     margin-top: 10px;
-
     height: 40px;
-
-
-
     color: rgb(255, 255, 255, 1);
     text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black, 1px 1px black, -1px -1px black, -1px 1px black, 1px -1px black;
     top: 5px;
@@ -140,36 +261,28 @@ body {
 .twitch {
     padding-left: 10px;
     display: flex;
-    background-color: #FFFFFF;
-    mask: url('https://neiloru.github.io/gameshowcases/resources/twitch.svg');
-    mask-position: right;
-    mask-repeat: no-repeat;
-
+    background-image: url('https://neiloru.github.io/gameshowcases/resources/icons/twitch.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    filter: invert(100%) drop-shadow(0 0 2px rgba(0, 0, 0, 1));
     height: 40px;
     width: 40px;
-
     cursor: pointer;
-
-
 }
 
 .youtube {
-
     padding-left: 10px;
     display: flex;
-    background-color: #FFFFFF;
-    mask: url('https://neiloru.github.io/gameshowcases/resources/youtube.svg');
-    mask-position: right;
-    mask-repeat: no-repeat;
+    background-image: url('https://neiloru.github.io/gameshowcases/resources/icons/youtube.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    filter: invert(100%) drop-shadow(0 0 2px rgba(0, 0, 0, 1));
     height: 40px;
     width: 40px;
-
     cursor: pointer;
 }
 
-.box:hover {
-    transform: scale(1.05);
-}
+
 
 
 /* Responsive: 2 per row on small screens */
@@ -177,9 +290,8 @@ body {
     .box {
         width: calc(50% - 20px);
     }
-}
 
-#stateofunreal {
-
-
+    .boxold {
+        width: calc(50% - 20px);
+    }
 }

@@ -1,26 +1,13 @@
-function calcLocalTime() {
-
-    const timeElements = document.querySelectorAll(".time");
-
-
-    timeElements.forEach(function (element) {
-        let time = new Date(new Date(element.textContent))
-        element.textContent = time.toLocaleTimeString('en-US', {
-            timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            hour: 'numeric',
-            minute: '2-digit'
-        });
-    });
-}
-
-
 window.onload = function () {
 
-    loadData()
+    setInterval(function(){update()}, 60000);
 
-
-    calcLocalTime();
+    update();
 };
+
+async function update(){
+    loadData()
+}
 
 async function loadData() {
 
@@ -34,20 +21,48 @@ async function loadData() {
         return new Date(a.datetime) - new Date(b.datetime);
     });
 
+    document.getElementsByClassName("container")[0].innerHTML = "";
+
     for (let i = 0; i < data.length; i++) {
+
+        let isOld = false;
+        let isLive = false;
 
         let date = new Date(data[i].datetime)
 
+        let duration = 30;
+        if (data[i].duration) {
+            duration = data[i].duration;
+        }
+
+        let dateWith2Weeks = new Date(date.getTime() + duration*60000 + 14 * 24 * 60 * 60 * 1000);
+        let dateWithDuration = new Date(date.getTime() + duration*60000);
+        let dateNow = new Date();
+
+        if (dateWith2Weeks < dateNow) {
+            continue
+        }
+
+        if (dateWithDuration < dateNow) {
+            isOld = true;
+        }
+        else if (dateNow >= date && dateNow <= dateWithDuration) {
+            isLive = true;
+        }
+
 
         let div = document.createElement("div");
-        div.className = "box"
+        div.className = getClassName("box", isLive, isOld);
         div.style.backgroundImage = `linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.75)), url(${data[i].background})`
+        if(isOld){
+            div.style.filter = "grayscale(100%)";
+        }
 
         let dateSpan = document.createElement("span");
-        dateSpan.className = "date";
+        dateSpan.className = getClassName("date", isLive, isOld);
 
         let monthSpan = document.createElement("span");
-        monthSpan.className = "month";
+        monthSpan.className = getClassName("month", isLive, false);
 
         let monthTextP = document.createElement("p");
         monthTextP.className = "monthText";
@@ -61,7 +76,7 @@ async function loadData() {
         dateSpan.appendChild(monthSpan);
 
         let daySpan = document.createElement("span");
-        daySpan.className = "day";
+        daySpan.className = getClassName("day", isLive, isOld);;
 
         let num = date.toLocaleString('en-US', {
             timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
@@ -77,13 +92,22 @@ async function loadData() {
         div.appendChild(dateSpan);
 
         let timeSpan = document.createElement("span");
-        timeSpan.className = "time";
+        timeSpan.className = getClassName("time", isLive, isOld);;
 
-        timeSpan.innerText = date.toLocaleTimeString('en-US', {
-            timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            hour: 'numeric',
-            minute: '2-digit'
-        });
+        if(isLive)
+        {
+            timeSpan.innerText = "LIVE";
+        }
+        else
+        {
+            timeSpan.innerText = date.toLocaleTimeString('en-US', {
+                        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+                        hour: 'numeric',
+                        minute: '2-digit'
+                    });
+        }
+
+        
 
         div.appendChild(timeSpan);
 
@@ -130,6 +154,18 @@ async function loadData() {
 
 }
 
+function getClassName(name, live, old){
+    if(live){
+        return name + "live";
+    }
+    else if(old){
+        return name + "old";
+    }
+    else{
+        return name;
+    }
+}
+
 function monthNumToText(num){
 
     switch(num){
@@ -146,19 +182,4 @@ function monthNumToText(num){
         case "11": return "NOV"
         case "12": return "DEC"
     }
-
 }
-
-//<div className="box" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.75)), url('https://cms-assets.unrealengine.com/AiKUh5PQCTaOFnmJDZJBfz/resize=width:900/output=format:webp/cm7dh2rnj0u4q07obay9n6lle')">
-//    <span className="date">
-//        <span className="month">
-//            <p className="monthText">JUN</p>
-//        </span>
-//        <span className="day">3</span>
-//    </span>
-//    <span className="time">2025/06/03 13:30:00 +0000</span>
-//    <span className="showcaseName">State of Unreal</span>
-//    <div className="links">
-//        <a className="youtube" href="https://youtube.com"></a>
-//    </div>
-//</div>
