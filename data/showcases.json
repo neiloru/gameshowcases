@@ -3,7 +3,7 @@
     "name": "State of Unreal",
     "datetime": "2025/06/03 13:30:00 +0000",
     "duration": "120",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_state-of-unreal.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_state-of-unreal.jpg",
     "links":
     [
       {
@@ -19,7 +19,7 @@
   {
     "name": "Best Indie Games Summer Showcase 2025",
     "datetime": "2025/06/03 15:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_best-indie.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_best-indie.jpg",
     "links":
     [
       {
@@ -31,7 +31,7 @@
   {
     "name": "The MIX Summer Game Showcase 2025",
     "datetime": "2025/06/03 16:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_mix-summer.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_mix-summer.jpg",
     "links":
     [
       {
@@ -47,7 +47,7 @@
   {
     "name": "Shacknews E4 2025 Indie Showcase",
     "datetime": "2025/06/04 18:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_shacknews-e4.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_shacknews-e4.jpg",
     "links":
     [
       {
@@ -63,7 +63,7 @@
   {
     "name": "Access-Ability Summer Showcase 2025",
     "datetime": "2025/06/06 15:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_access-ability.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_access-ability.jpg",
     "links":
     [
       {
@@ -76,7 +76,7 @@
     "name": "Summer Game Fest 2025",
     "datetime": "2025/06/06 21:00:00 +0000",
     "duration": "120",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_summer-games-fest.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_summer-games-fest.jpg",
     "links":
     [
       {
@@ -93,7 +93,7 @@
     "name": "Day of the Devs",
     "datetime": "2025/06/06 23:00:00 +0000",
     "duration": "120",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_day-of-the-devs.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_day-of-the-devs.jpg",
     "links":
     [
       {
@@ -110,7 +110,7 @@
     "name": "BALL x PIT",
     "datetime": "2025/06/07 00:00:00 +0000",
     "duration": "30",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ballxpit.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ballxpit.jpg",
     "links":
     [
       {
@@ -126,7 +126,7 @@
   {
     "name": "IGN Live",
     "datetime": "2025/06/07 00:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ign-live.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ign-live.jpg",
     "links":
     [
       {
@@ -143,7 +143,7 @@
     "name": "Wholesome Direct",
     "datetime": "2025/06/07 15:45:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_wholesome.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_wholesome.jpg",
     "links":
     [
       {
@@ -154,9 +154,9 @@
   },
   {
     "name": "Women-Led Games",
-    "datetime": "2025/06/07 17:00:00 +0000",
+    "datetime": "2026/06/07 17:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_woman-led.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_woman-led.jpg",
     "links":
     [
       {
@@ -167,9 +167,9 @@
   },
   {
     "name": "Latin American Games Showcase",
-    "datetime": "2025/06/07 18:00:00 +0000",
+    "datetime": "2026/06/07 18:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_latin-american.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_latin-american.jpg",
     "links":
     [
       {
@@ -180,9 +180,9 @@
   },
   {
     "name": "South East Asian Games Showcase",
-    "datetime": "2025/06/07 18:55:00 +0000",
+    "datetime": "2026/06/07 18:55:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_south-east-asian.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_south-east-asian.jpg",
     "links":
     [
       {
@@ -197,8 +197,8 @@
   },
   {
     "name": "Future Games Show Summer Showcase",
-    "datetime": "2025/06/07 20:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_future-games-summer.jpg",
+    "datetime": "2026/06/07 20:00:00 +0000",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_future-games-summer.jpg",
     "links":
     [
       {
@@ -215,7 +215,7 @@
     "name": "Green Games Showcase",
     "datetime": "2025/06/07 20:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_green-games.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_green-games.jpg",
     "links":
     [
       {
@@ -228,7 +228,7 @@
     "name": "Frosty Games Fest Showcase",
     "datetime": "2025/06/07 23:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_frosty.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_frosty.jpg",
     "links":
     [
       {
@@ -245,7 +245,7 @@
     "name": "Xbox Games Showcase + The Outer Worlds 2 Direct",
     "datetime": "2025/06/08 17:00:00 +0000",
     "duration": "120",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_xbox.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_xbox.jpg",
     "links":
     [
       {
@@ -262,7 +262,7 @@
     "name": "PC Gaming Show",
     "datetime": "2025/06/08 19:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_pc-gaming-show.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_pc-gaming-show.jpg",
     "links":
     [
       {
@@ -278,7 +278,7 @@
   {
     "name": "Death Stranding 2 Game Premiere",
     "datetime": "2025/06/09 2:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_death-stranding-2.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_death-stranding-2.jpg",
     "links":
     [
       {
@@ -291,7 +291,7 @@
     "name": "Black Voices in Gaming",
     "datetime": "2025/06/09 16:00:00 +0000",
     "duration": "60",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_black-voices.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_black-voices.jpg",
     "links":
     [
       {
@@ -303,7 +303,7 @@
   {
     "name": "IOI Showcase",
     "datetime": "2025/06/07 01:00:00 +0000",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ioi-showcase.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_ioi-showcase.jpg",
     "links":
     [
       {
@@ -316,7 +316,7 @@
     "name": "State of Play",
     "datetime": "2025/06/04 21:00:00 +0000",
     "duration": "40",
-    "background": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_jun-state-of-play.jpg",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_jun-state-of-play.jpg",
     "links":
     [
       {

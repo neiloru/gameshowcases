@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Summer Game Fest",
+    "datetime": "2026/06/05 14:00:00 -0700",
+    "duration": "40",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_summer-games-fest.jpg",
+    "links":
+    [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/thegameawards"
+      },
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/thegameawards"
+      }
+    ]
+  }
+]

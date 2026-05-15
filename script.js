@@ -1,9 +1,21 @@
+
+// Refresh every minute to update the showcases
 window.onload = function () {
 
     setInterval(function(){update()}, 60000);
-
     update();
 };
+
+function toggleHeader() {
+    document.querySelector(".header").classList.toggle("collapsed");
+    document.querySelector(".header-toggle").classList.toggle("collapsed");
+    let container = document.querySelector(".container");
+    if (document.querySelector(".header").classList.contains("collapsed")) {
+        container.style.height = "calc(100vh - 1.6rem)";
+    } else {
+        container.style.height = "";
+    }
+}
 
 async function update(){
     loadData()
@@ -11,8 +23,9 @@ async function update(){
 
 async function loadData() {
 
+    let currentYear = new Date().getFullYear();
 
-    const res = await fetch("./data/showcases.json")
+    const res = await fetch(`./data/${currentYear}/showcases.json`)
     const text = await res.text()
 
     let data = JSON.parse(text);
@@ -21,11 +34,36 @@ async function loadData() {
         return new Date(a.datetime) - new Date(b.datetime);
     });
 
-    document.getElementsByClassName("container")[0].innerHTML = "";
+    document.getElementsByClassName("header")[0].innerHTML = "";
+
+    let liveSection = document.createElement("div");
+    liveSection.className = "header-section";
+    let liveTitle = document.createElement("h2");
+    liveTitle.className = "section-title";
+    liveTitle.innerText = "Live ";
+    let liveCircle = document.createElement("span");
+    liveCircle.className = "live-circle";
+    liveTitle.appendChild(liveCircle);
+    liveSection.appendChild(liveTitle);
+    let liveItems = document.createElement("div");
+    liveItems.className = "section-items";
+    liveSection.appendChild(liveItems);
+
+    let nextSection = document.createElement("div");
+    nextSection.className = "header-section";
+    let nextTitle = document.createElement("h2");
+    nextTitle.className = "section-title";
+    nextTitle.innerText = "Next Up";
+    nextSection.appendChild(nextTitle);
+    let nextItems = document.createElement("div");
+    nextItems.className = "section-items";
+    nextSection.appendChild(nextItems);
+
+    let hasLive = false;
+    let firstEmbedUrl = null;
 
     for (let i = 0; i < data.length; i++) {
 
-        let isOld = false;
         let isLive = false;
 
         let date = new Date(data[i].datetime)
@@ -35,131 +73,149 @@ async function loadData() {
             duration = data[i].duration;
         }
 
-        let dateWith2Weeks = new Date(date.getTime() + duration*60000 + 7 * 24 * 60 * 60 * 1000);
         let dateWithDuration = new Date(date.getTime() + duration*60000);
         let dateNow = new Date();
 
-        if (dateWith2Weeks < dateNow) {
-            continue
+        if (dateWithDuration < dateNow) {
+            continue;
         }
 
-        if (dateWithDuration < dateNow) {
-            isOld = true;
-        }
-        else if (dateNow >= date && dateNow <= dateWithDuration) {
+        if (dateNow >= date && dateNow <= dateWithDuration) {
             isLive = true;
         }
 
+        // Create the showcase box
 
-        let div = document.createElement("div");
-        div.className = getClassName("box", isLive, isOld);
-        div.style.backgroundImage = `linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.75)), url(${data[i].background})`
-        if(isOld){
-            div.style.filter = "grayscale(100%)";
+        let showcaseDiv = document.createElement("div");
+        showcaseDiv.className = getClassName("showcase", isLive);
+
+        let thumbnailDiv = document.createElement("div");
+        thumbnailDiv.className = "thumbnail";
+        thumbnailDiv.style.backgroundImage = `url(${data[i].thumbnail})`
+        thumbnailDiv.style.cursor = "pointer";
+
+        // Find embed URL
+        let embedUrl = null;
+        for (let j = 0; j < data[i].links.length; j++) {
+            let link = data[i].links[j];
+            if (link.embed) {
+                embedUrl = link.embed;
+                break;
+            }
         }
 
-        let dateSpan = document.createElement("span");
-        dateSpan.className = getClassName("date", isLive, isOld);
+        if (embedUrl) {
+            if (!firstEmbedUrl) {
+                firstEmbedUrl = embedUrl;
+            }
+            thumbnailDiv.addEventListener("click", (function(url) {
+                return function() {
+                    openPlayer(url);
+                };
+            })(embedUrl));
+        }
 
-        let monthSpan = document.createElement("span");
-        monthSpan.className = getClassName("month", isLive, false);
+        showcaseDiv.appendChild(thumbnailDiv);
 
-        let monthTextP = document.createElement("p");
-        monthTextP.className = "monthText";
+        let nameSpan = document.createElement("span");
+        nameSpan.className = "showcase-name";
+        nameSpan.innerText = data[i].name;
+        showcaseDiv.appendChild(nameSpan);
 
-        monthTextP.innerText = monthNumToText(date.toLocaleString('en-US', {
+        let dateRow = document.createElement("div");
+        dateRow.className = "showcase-date-row";
+
+        let dateLabel = document.createElement("span");
+        dateLabel.className = "showcase-date";
+        dateLabel.innerText = date.toLocaleString(undefined, {
             timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            month: '2-digit',
-        }));
-
-        monthSpan.appendChild(monthTextP);
-        dateSpan.appendChild(monthSpan);
-
-        let daySpan = document.createElement("span");
-        daySpan.className = getClassName("day", isLive, isOld);;
-
-        let num = date.toLocaleString('en-US', {
-            timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-            day: '2-digit',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: '2-digit'
         });
+        dateRow.appendChild(dateLabel);
 
-        if(num[0] === "0")
-            num = num[1];
+        if (!isLive && date > new Date()) {
+            let countdownSpan = document.createElement("span");
+            countdownSpan.className = "showcase-countdown";
+            dateRow.appendChild(countdownSpan);
 
-        daySpan.innerText = num
-
-        dateSpan.appendChild(daySpan);
-        div.appendChild(dateSpan);
-
-        let timeSpan = document.createElement("span");
-        timeSpan.className = getClassName("time", isLive, isOld);
-
-        if(isLive)
-        {
-            timeSpan.innerText = "LIVE";
+            (function(el, target) {
+                function tick() {
+                    let now = new Date();
+                    let diff = target - now;
+                    if (diff <= 0) {
+                        return;
+                    }
+                    let d = Math.floor(diff / 86400000);
+                    let h = Math.floor((diff % 86400000) / 3600000);
+                    let m = Math.floor((diff % 3600000) / 60000);
+                    let s = Math.floor((diff % 60000) / 1000);
+                    let parts = [];
+                    parts.push("Starts in:");
+                    if (d > 0) parts.push(d + "d");
+                    if (h > 0) parts.push(h + "h");
+                    if (m > 0) parts.push(m + "m");
+                    parts.push(s + "s");
+                    el.innerText = parts.join(" ");
+                    setTimeout(tick, 1000);
+                }
+                tick();
+            })(countdownSpan, date);
         }
-        else
-        {
-            timeSpan.innerText = date.toLocaleTimeString('en-US', {
-                        timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
-                        hour: 'numeric',
-                        minute: '2-digit'
-                    });
-        }
 
-        
+        showcaseDiv.appendChild(dateRow);
 
-        div.appendChild(timeSpan);
-
-
-        let showcaseNameSpan = document.createElement("span");
-        showcaseNameSpan.className = "showcaseName";
-
-        showcaseNameSpan.innerText = data[i].name;
-
-        div.appendChild(showcaseNameSpan);
-
-        let linksDiv = document.createElement("div");
-        linksDiv.className = "links";
-
-
-        let maxLinks = 3;
-        if(data[i].links.length < 3)
-            maxLinks = data[i].links.length;
-
-        linksDiv.style.marginLeft = 370 - (maxLinks*40) + "px";
+        let linksContainer = document.createElement("div");
+        linksContainer.className = "showcase-links";
 
         for (let j = 0; j < data[i].links.length; j++) {
-
             let link = data[i].links[j];
             let linkA = document.createElement("a");
+            linkA.className = "showcase-link";
+            linkA.href = link.link;
             linkA.target = "_blank";
             linkA.rel = "noopener noreferrer";
-
-            if(link.site === "youtube"){
-                linkA.className = "youtube";
-            }
-            else if(link.site === "twitch"){
-                linkA.className = "twitch";
-            }
-
-            linkA.href = link.link;
-            linksDiv.appendChild(linkA);
+            linkA.innerText = link.site + " ↗";
+            linksContainer.appendChild(linkA);
         }
 
-        div.appendChild(linksDiv);
+        showcaseDiv.appendChild(linksContainer);
 
-        document.getElementsByClassName("container")[0].appendChild(div);
+        if (isLive) {
+            hasLive = true;
+            liveItems.appendChild(showcaseDiv);
+        } else {
+            nextItems.appendChild(showcaseDiv);
+        }
+    }
+
+    if (hasLive) {
+        document.getElementsByClassName("header")[0].appendChild(liveSection);
+    }
+    if (nextItems.children.length > 0) {
+        document.getElementsByClassName("header")[0].appendChild(nextSection);
+    }
+
+    if (firstEmbedUrl && !document.querySelector(".player-iframe")) {
+        openPlayer(firstEmbedUrl);
+    }
+
+    if (!document.querySelector(".player-iframe")) {
+        let container = document.getElementsByClassName("container")[0];
+        container.innerHTML = "";
+        let msg = document.createElement("p");
+        msg.className = "no-embed-msg";
+        msg.innerText = "😔 No embed found\n Please click any thumbnail to open a showcase\n or the link to open as a new tab";
+        container.appendChild(msg);
     }
 
 }
 
-function getClassName(name, live, old){
+function getClassName(name, live){
     if(live){
-        return name + "live";
-    }
-    else if(old){
-        return name + "old";
+        return name + "-live";
     }
     else{
         return name;
@@ -182,4 +238,22 @@ function monthNumToText(num){
         case "11": return "NOV"
         case "12": return "DEC"
     }
+}
+
+function openPlayer(embedUrl) {
+    let container = document.getElementsByClassName("container")[0];
+    container.innerHTML = "";
+
+    let playerWrapper = document.createElement("div");
+    playerWrapper.className = "player-wrapper";
+
+    let iframe = document.createElement("iframe");
+    iframe.className = "player-iframe";
+    iframe.src = embedUrl + "?autoplay=1&mute=1";
+    iframe.allow = "autoplay; encrypted-media";
+    iframe.allowFullscreen = true;
+    iframe.frameBorder = "0";
+    playerWrapper.appendChild(iframe);
+
+    container.appendChild(playerWrapper);
 }

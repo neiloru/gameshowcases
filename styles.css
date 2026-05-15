@@ -12,245 +12,199 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Radio Canada", sans-serif;
-    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 1), rgba(68, 68, 68, 1));
-
+    background-image: linear-gradient(to bottom, rgba(30, 30, 30, 255), rgba(25, 25, 25, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 2000px;
-    margin: 50px auto;
+    align-items: center;
     gap: 20px;
-    padding: 0 10px;
+    height: calc(100vh - 20.8rem);
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.player-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.player-iframe {
+    border: none;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.no-embed-msg {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .header {
-    overflow: hidden;
-    height: 200px;
-    background-image: linear-gradient(to right, rgba(14, 250, 205, 0), rgba(14, 250, 205, 0), rgba(14, 250, 205, 1), rgba(14, 250, 205, 1)), url('https://neiloru.github.io/gameshowcases/resources/thumbnails/sgfpartners.jpg');
-    background-position: top left, -25rem -15rem, top left;
-    background-repeat:no-repeat;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 17rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);      
+    padding: 1rem;
+    flex-wrap: nowrap;
+    transition: height 0.3s ease, padding 0.3s ease;
+
+    background-image: linear-gradient(to bottom, rgba(30, 30, 30, 255), rgba(25, 25, 25, 255));
 }
 
-.box {
+.header.collapsed {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.header-toggle {
+    display: block;
+    width: 100%;
+    background: rgba(20, 20, 20, 1);
+    color: white;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.toggle-arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.header-toggle.collapsed .toggle-arrow {
+    transform: rotate(180deg);
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: fit-content;
+    height: 100%;
+}
+
+.header-section + .header-section {
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 1rem;
+}
+
+.live-circle {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background-color: red;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.section-title {
+    color: white;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+.section-items {
+    display: flex;
+    gap: 1rem;
+    height: 15rem;
+    min-height: 15rem;
+}
+
+.showcase {
     position: relative;
-    background-color: white;
-    border: 1px solid rgba(14, 250, 205, 1);
-    box-shadow: 0 0 10px rgba(14, 250, 205, 0.2);
-    width: calc(25% - 20px);
-    min-height: 225px;
-    max-height: 225px;
+    background-color: transparent;
+    height: 15rem;
+    aspect-ratio: 21 / 16;
+    flex-shrink: 0;
     font-size: 14px;
     overflow: hidden;
-    border-radius: 15px;
-    min-width: 400px;
-    max-width: 400px;
-    background-size: cover;
 }
 
-.box:hover {
-    transform: scale(1.05);
-}
-
-.boxold {
+.showcase-live {
     position: relative;
-    background-color: white;
-    border: 1px solid rgba(100, 100, 100, 1);
-    width: calc(25% - 20px);
-    min-height: 225px;
-    max-height: 225px;
+    background-color: transparent;
+    height: 15rem;
+    aspect-ratio: 21 / 16;
+    flex-shrink: 0;
     font-size: 14px;
     overflow: hidden;
-    border-radius: 15px;
-    min-width: 400px;
-    max-width: 400px;
-    background-size: cover;
 }
 
-.boxold:hover {
-    transform: scale(1.05);
-}
 
-.boxlive {
+.thumbnail {
     position: relative;
     background-color: white;
-    border: 1px solid rgb(218, 42, 11);
-    box-shadow: 0 0 10px rgba(218, 42, 11, 0.2);
-    width: calc(25% - 20px);
-    min-height: 225px;
-    max-height: 225px;
+    width: 100%;
+    aspect-ratio: 21 / 12;
     font-size: 14px;
     overflow: hidden;
-    border-radius: 15px;
-    min-width: 400px;
-    max-width: 400px;
     background-size: cover;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
 }
 
-.boxlive:hover {
-    transform: scale(1.05);
-}
-
-.box span {
-    position: absolute;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-.boxold span {
-    position: absolute;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-.boxlive span {
-    position: absolute;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-.date {
-    border-radius: 10px!important;
-    min-width: 75px;
-    max-width: 75px;
-    min-height: 85px;
-    max-height: 85px;
-    background-color: rgba(60, 60, 60, 1);
-    top: 10px;
-    left: 10px;
-    box-shadow: 0 0 5px rgba(14, 250, 205, 1);
-}
-
-.dateold {
-    border-radius: 10px!important;
-    min-width: 75px;
-    max-width: 75px;
-    min-height: 85px;
-    max-height: 85px;
-    background-color: rgba(60, 60, 60, 1);
-    top: 10px;
-    left: 10px;
-    box-shadow: 0 0 5px rgba(180, 180, 180, 1);
-}
-
-.datelive {
-    border-radius: 10px!important;
-    min-width: 75px;
-    max-width: 75px;
-    min-height: 85px;
-    max-height: 85px;
-    background-color: rgb(255, 255, 255);
-    top: 10px;
-    left: 10px;
-    box-shadow: 0 0 5px rgba(218, 42, 11, 1);
-}
-
-.time {
-    min-width: 75px;
-    max-width: 75px;
-    border-radius: 10px!important;
-    text-align: center;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(14, 250, 205, 1);
-    color: rgba(36, 85, 74, 1);
+.showcase-name {
+    display: block;
+    text-align: left;
+    color: white;
     font-weight: bold;
-    font-size: larger;
-    box-shadow: 0 0 5px rgba(14, 250, 205, 1);
+    padding: 0.3rem 0.2rem 0.3rem;
+    font-size: 0.85rem;
 }
 
-.timeold {
-    min-width: 75px;
-    max-width: 75px;
-    border-radius: 10px!important;
-    text-align: center;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(180, 180, 180, 1);
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    font-size: larger;
-    box-shadow: 0 0 5px rgba(180, 180, 180, 1);
+.showcase-date-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.2rem 0.3rem;
 }
 
-.timelive {
-    min-width: 75px;
-    max-width: 75px;
-    border-radius: 10px!important;
-    text-align: center;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgb(218, 42, 11);
-    color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    font-size: larger;
-    box-shadow: 0 0 5px rgb(218, 42, 11);
+.showcase-date {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
 }
 
-.month {
-    text-align: center;
-    border-radius: 10px 10px 0 0!important;
-    background-color: rgba(31, 31, 31, 1);
-    top: 0px;
-    left: 0px;
-    width: 75px;
-    height: 15px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 18pt;
-    font-weight: bold;
+.showcase-countdown {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    white-space: nowrap;
 }
 
-.monthlive {
-    text-align: center;
-    border-radius: 10px 10px 0 0!important;
-    background-color: rgb(218, 42, 11);
-    top: 0px;
-    left: 0px;
-    width: 75px;
-    height: 15px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 18pt;
-    font-weight: bold;
+.showcase-links {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.2rem 0.3rem;
 }
 
-.monthText{
-    position: relative;
-    top: -30px;
+.showcase-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    text-decoration: none;
 }
 
-.day {
-    text-align: center;
-    bottom: 17px;
-    left: 0;
-    width: 75px;
-    height: 50px;
-    color: rgba(14, 250, 205, 1);
-    font-size: 45pt;
+.showcase-link:hover {
+    color: white;
 }
-
-.dayold {
-    text-align: center;
-    bottom: 17px;
-    left: 0;
-    width: 75px;
-    height: 50px;
-    color: rgb(180, 180, 180);
-    font-size: 45pt;
-}
-
-.daylive {
-    text-align: center;
-    bottom: 17px;
-    left: 0;
-    width: 75px;
-    height: 50px;
-    color: rgb(218, 42, 11);
-    font-size: 45pt;
-}
-
 
 .showcaseName {
     color: rgb(255, 255, 255, 1);
@@ -299,31 +253,6 @@ body {
     height: 40px;
     width: 40px;
     cursor: pointer;
-}
-
-.headerTitle {
-    margin-top: 0; 
-    font-size: 27pt; 
-    text-align: right; 
-    padding-right: 40px; 
-    padding-top: 25px; 
-    margin-bottom: 10px; 
-    color: white;
-    filter: drop-shadow(2px 0 black) drop-shadow(-2px 0 black) drop-shadow(0 2px black) drop-shadow(0 -2px black) 
-}
-
-.headerText {
-    text-align: right;
-    padding-right: 40px;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.headerLinks {
-    text-decoration: none; 
-    color: rgba(33, 33, 33, 1); 
-    font-weight: bold; 
-    font-size: large;
 }
 
 
