@@ -2,8 +2,8 @@
   {
     "name": "Summer Game Fest",
     "datetime": "2026/06/05 14:00:00 -0700",
-    "duration": "40",
-    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2025_summer-games-fest.jpg",
+    "duration": "120",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_summer-games-fest.webp",
     "links":
     [
       {
@@ -12,8 +12,34 @@
       },
       {
         "site": "Twitch",
-        "link": "https://www.twitch.tv/thegameawards"
+        "link": "https://www.twitch.tv/thegameawards",
+        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
       }
     ]
+  },
+  {
+    "name": "Day of the Devs",
+    "datetime": "2026/06/05 16:00:00 -0700",
+    "duration": "120",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_day-of-the-devs.png",
+    "links":
+    [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/thegameawards"
+      },
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/thegameawards",
+        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "Xbox Games Showcase",
+    "datetime": "2026/06/07 22:00:00 -0700",
+    "duration": "120",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_xbox-showcase.jpg",
+    "links": []
   }
 ]
