@@ -240,7 +240,7 @@ function monthNumToText(num){
     }
 }
 
-function openPlayer(embedUrl) {
+function openPlayer(embedUrl, site) {
     let container = document.getElementsByClassName("container")[0];
     container.innerHTML = "";
 
@@ -249,7 +249,12 @@ function openPlayer(embedUrl) {
 
     let iframe = document.createElement("iframe");
     iframe.className = "player-iframe";
-    iframe.src = embedUrl + "?autoplay=1&mute=1";
+
+    if (site == "YouTube")
+        iframe.src = embedUrl + "?autoplay=1&mute=1";
+    else if(site == "Twitch")
+        iframe.src = embedUrl + "&autoplay=1&muted=1";
+
     iframe.allow = "autoplay; encrypted-media";
     iframe.allowFullscreen = true;
     iframe.frameBorder = "0";
