@@ -61,6 +61,7 @@ async function loadData() {
 
     let hasLive = false;
     let firstEmbedUrl = null;
+    let firstEmbedSite = null;
 
     for (let i = 0; i < data.length; i++) {
 
@@ -96,10 +97,12 @@ async function loadData() {
 
         // Find embed URL
         let embedUrl = null;
+        let embedSite = null;
         for (let j = 0; j < data[i].links.length; j++) {
             let link = data[i].links[j];
             if (link.embed) {
                 embedUrl = link.embed;
+                embedSite = link.site;
                 break;
             }
         }
@@ -107,12 +110,13 @@ async function loadData() {
         if (embedUrl) {
             if (!firstEmbedUrl) {
                 firstEmbedUrl = embedUrl;
+                firstEmbedSite = embedSite;
             }
-            thumbnailDiv.addEventListener("click", (function(url) {
+            thumbnailDiv.addEventListener("click", (function(url, site) {
                 return function() {
-                    openPlayer(url);
+                    openPlayer(url, site);
                 };
-            })(embedUrl));
+            })(embedUrl, embedSite));
         }
 
         showcaseDiv.appendChild(thumbnailDiv);
@@ -199,7 +203,7 @@ async function loadData() {
     }
 
     if (firstEmbedUrl && !document.querySelector(".player-iframe")) {
-        openPlayer(firstEmbedUrl);
+        openPlayer(firstEmbedUrl, firstEmbedSite);
     }
 
     if (!document.querySelector(".player-iframe")) {
