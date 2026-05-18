@@ -7,7 +7,7 @@
       "duration": "120",
       "thumbnail": "./data/2026/20260605_summer-games-fest/thumbnail.png",
       "links": [
-        "https://www.youtube.com/thegameawards",
+        "https://www.youtube.com/watch?v=QdNmVWXuYec",
         "https://www.twitch.tv/thegameawards"
       ]
     },
@@ -17,7 +17,7 @@
       "duration": "120",
       "thumbnail": "./data/2026/20260605_day-of-the-devs/thumbnail.png",
       "links": [
-        "https://www.youtube.com/thegameawards",
+        "https://www.youtube.com/watch?v=QdNmVWXuYec",
         "https://www.twitch.tv/thegameawards"
       ]
     },
@@ -55,6 +55,7 @@
       "duration": "60",
       "thumbnail": "./data/2026/20260606_wholesome-direct/thumbnail.png",
       "links": [
+        "https://www.youtube.com/watch?v=SZ-TixImWWs",
         "https://www.twitch.tv/wholesome_games"
       ]
     },
@@ -73,7 +74,9 @@
       "datetime": "2026/06/07 12:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260607_pc-gaming-show/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.youtube.com/watch?v=tRVxQ7VLmHI"
+      ]
     },
     {
       "name": "The Game Awards",
@@ -86,11 +89,12 @@
       ]
     },
     {
-      "name": "Women-Led Games Showcase",
+      "name": "Women Led Games Showcase",
       "datetime": "2026/06/04 16:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260604_women-led-games-showcase/thumbnail.png",
       "links": [
+        "https://www.youtube.com/watch?v=9kVonpAgJ68",
         "https://www.twitch.tv/womenledgames"
       ]
     },
@@ -118,28 +122,37 @@
       "datetime": "2026/06/02 12:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260602_black-voices-in-gaming/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.youtube.com/watch?v=dkTn098SQDM"
+      ]
     },
     {
       "name": "Southeast Asian Games Showcase",
       "datetime": "2026/06/06 08:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260606_southeast-asian-games-showcase/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.twitch.tv/seagamesshowcase"
+      ]
     },
     {
       "name": "Story Rich Showcase",
       "datetime": "2026/06/06 08:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260606_story-rich-showcase/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.youtube.com/watch?v=dRVeYxwjuiI",
+        "https://www.youtube.com/fellowtraveller"
+      ]
     },
     {
       "name": "Green Games Showcase",
       "datetime": "2026/06/06 11:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260606_green-games-showcase/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.twitch.tv/thegameawards"
+      ]
     },
     {
       "name": "Gayming Pride Parade",
@@ -153,7 +166,9 @@
       "datetime": "2026/06/06 15:00:00 -0700",
       "duration": "60",
       "thumbnail": "./data/2026/20260606_forsty-games-showcase/thumbnail.png",
-      "links": []
+      "links": [
+        "https://www.youtube.com/watch?v=6mmuYcEEEJU"
+      ]
     },
     {
       "name": "Deutsche Indie Showcase",
