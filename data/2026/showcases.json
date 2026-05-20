@@ -41,5 +41,23 @@
     "duration": "120",
     "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_xbox-showcase.jpg",
     "links": []
+  },
+  {
+    "name": "PlayStation State of Play",
+    "datetime": "2026/06/02 14:00:00 -0700",
+    "duration": "75",
+    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_06_slaystation-state-of-play.jpg",
+    "links": [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=cvh0xXmu0bs",
+        "embed": "https://www.youtube.com/embed/cvh0xXmu0bs"
+      },
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/playstation",
+        "embed": "https://player.twitch.tv/?channel=playstation&parent=showcases.neiloru.com"
+      }
+    ]
   }
 ]
