@@ -3,7 +3,7 @@
     "name": "Summer Game Fest",
     "datetime": "2026/06/05 14:00:00 -0700",
     "duration": "120",
-    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_summer-games-fest.webp",
+    "thumbnail": "./resources/thumbnails/2026/2026_summer-games-fest.webp",
     "links":
     [
       {
@@ -21,7 +21,7 @@
     "name": "Day of the Devs",
     "datetime": "2026/06/05 16:00:00 -0700",
     "duration": "120",
-    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_day-of-the-devs.png",
+    "thumbnail": "./resources/thumbnails/2026/2026_day-of-the-devs.png",
     "links":
     [
       {
@@ -39,14 +39,20 @@
     "name": "Xbox Games Showcase",
     "datetime": "2026/06/07 10:00:00 -0700",
     "duration": "120",
-    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_xbox-showcase.jpg",
-    "links": []
+    "thumbnail": "./resources/thumbnails/2026/2026_xbox-showcase.jpg",
+    "links": [
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/Xbox",
+        "embed": "https://player.twitch.tv/?channel=xbox&parent=showcases.neiloru.com"
+      }
+    ]
   },
   {
     "name": "PlayStation State of Play",
     "datetime": "2026/06/02 14:00:00 -0700",
     "duration": "75",
-    "thumbnail": "https://neiloru.github.io/gameshowcases/resources/thumbnails/2026/2026_06_slaystation-state-of-play.jpg",
+    "thumbnail": "./resources/thumbnails/2026/2026_06_slaystation-state-of-play.jpg",
     "links": [
       {
         "site": "YouTube",
@@ -57,6 +63,101 @@
         "site": "Twitch",
         "link": "https://www.twitch.tv/playstation",
         "embed": "https://player.twitch.tv/?channel=playstation&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "Six One Indie Showcase",
+    "datetime": "2026/05/21 8:50:00 -0700",
+    "duration": "93",
+    "thumbnail": "./resources/thumbnails/2026/2026_six_one_indie_showcase.jpg",
+    "links": [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=l2b6H2dyUsw",
+        "embed": "https://www.youtube.com/embed/l2b6H2dyUsw"
+      }
+    ]
+  },
+  {
+    "name": "Wholesome Direct",
+    "datetime": "2026/06/06 9:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_wholesome-direct.jpg",
+    "links": [
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/wholesome_games",
+        "embed": "https://player.twitch.tv/?channel=wholesome_games&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "Future Games Show Summer Showcase",
+    "datetime": "2026/06/06 12:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_future-games-show-summer-showcase.jpg",
+    "links": [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/watch?v=hM2Ofso_w0c",
+        "embed": "https://www.youtube.com/embed/hM2Ofso_w0c"
+      },
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/futuregamesshow",
+        "embed": "https://player.twitch.tv/?channel=futuregamesshow&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "PC Gaming Show ",
+    "datetime": "2026/06/07 12:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026-pc-gamer-showcase.jpg",
+    "links": []
+  },
+  {
+    "name": "The Game Awards",
+    "datetime": "2026/12/10 20:00:00 -0700",
+    "duration": "180",
+    "thumbnail": "./resources/thumbnails/2026/2026_the-game-awards.jpg",
+    "links":
+    [
+      {
+        "site": "YouTube",
+        "link": "https://www.youtube.com/thegameawards"
+      },
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/thegameawards",
+        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "Women-Led Games Showcase",
+    "datetime": "2026/06/04 16:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_women-led-games.png",
+    "links": [
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/womenledgames",
+        "embed": "https://player.twitch.tv/?channel=womenledgames&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "The Latin American Games Showcase",
+    "datetime": "2026/06/04 14:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_latin-american-games-showcase.jpg",
+    "links": [
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/lagshowcase",
+        "embed": "https://player.twitch.tv/?channel=lagshowcase&parent=showcases.neiloru.com"
       }
     ]
   }
