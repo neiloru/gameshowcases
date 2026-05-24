@@ -160,5 +160,74 @@
         "embed": "https://player.twitch.tv/?channel=lagshowcase&parent=showcases.neiloru.com"
       }
     ]
+  },
+  {
+    "name": "THE MIX SUMMER GAME SHOWCASE",
+    "datetime": "2026/06/01 21:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_the-mix.png",
+    "links": [
+      {
+        "site": "Twitch",
+        "link": "https://www.twitch.tv/mediaindieexchange",
+        "embed": "https://player.twitch.tv/?channel=mediaindieexchange&parent=showcases.neiloru.com"
+      }
+    ]
+  },
+  {
+    "name": "Black Voices in Gaming",
+    "datetime": "2026/06/02 12:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_black-voices-in-gaming.png",
+    "links": []
+  },
+  {
+    "name": "Southeast Asian Games Showcase",
+    "datetime": "2026/06/06 08:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_southeast-asian-games-showcase.png",
+    "links": []
+  },
+  {
+    "name": "Story Rich Showcase",
+    "datetime": "2026/06/06 08:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_story-rich-showcase.jpg",
+    "links": []
+  },
+  {
+    "name": "Green Games Showcase",
+    "datetime": "2026/06/06 11:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_green-games-showcase.png",
+    "links": []
+  },
+  {
+    "name": "Gayming Pride Parade",
+    "datetime": "2026/06/06 12:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_gayming-pride-parade.png",
+    "links": []
+  },
+  {
+    "name": "Frosty Games Showcase",
+    "datetime": "2026/06/06 15:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_forsty-games-showcase.jpg",
+    "links": []
+  },
+  {
+    "name": "Deutsche Indie Showcase",
+    "datetime": "2026/06/07 14:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_deutsche-indie-showcase.png",
+    "links": []
+  },
+  {
+    "name": "India Games Showcase",
+    "datetime": "2026/06/08 10:00:00 -0700",
+    "duration": "60",
+    "thumbnail": "./resources/thumbnails/2026/2026_india-games-showcase.jpg",
+    "links": []
   }
 ]
