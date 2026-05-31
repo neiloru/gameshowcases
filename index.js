@@ -212,6 +212,7 @@ function renderShowcaseList(data) {
                 li.classList.add('active');
                 activeShowcaseId = li.id;
                 document.getElementById('topbar-showcases-title').textContent = showcase.name;
+                document.title = showcase.name;
                 openIFrame(showcase);
             });
 
@@ -262,6 +263,7 @@ function openUpcomingShowcase() {
     activeShowcaseId = createShowcaseId(upcomingShowcase);
     const sidebarTitle = document.getElementById('topbar-showcases-title');
     sidebarTitle.textContent = upcomingShowcase.name;
+    document.title = upcomingShowcase.name;
 
     openIFrame(upcomingShowcase);
 
