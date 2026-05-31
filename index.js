@@ -192,7 +192,7 @@ function renderShowcaseList(data) {
                 let domain = getDomainFromLink(link);
 
                 if (domain === "youtube.com") {
-                    linkA.innerText = + "YouTube↗";
+                    linkA.innerText = "YouTube↗";
                 }
                 else if (domain === "twitch.tv") {
                     linkA.innerText = "Twitch↗";
