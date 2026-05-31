@@ -88,7 +88,7 @@ function createSections(showcasesData) {
     return sections;
 }
 
-function renderShowcaseList(data) {
+function renderShowcaseList(data, scrollToLive = true) {
     const list = document.getElementById('showcase-list');
     list.innerHTML = '';
 
@@ -226,7 +226,7 @@ function renderShowcaseList(data) {
     }
 
     // Scroll the sidebar so the live/upcoming section is at the top
-    if (scrollTarget) {
+    if (scrollTarget && scrollToLive) {
         requestAnimationFrame(() => {
             scrollTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
@@ -347,7 +347,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         newData.showcases.sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
         data = newData;
 
-        renderShowcaseList(data);
+        renderShowcaseList(data, false);
 
         // Re-apply active state without reloading the player
         if (activeShowcaseId) {
