@@ -1,233 +1,173 @@
-[
-  {
-    "name": "Summer Game Fest",
-    "datetime": "2026/06/05 14:00:00 -0700",
-    "duration": "120",
-    "thumbnail": "./resources/thumbnails/2026/2026_summer-games-fest.webp",
-    "links":
-    [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/thegameawards"
-      },
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/thegameawards",
-        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Day of the Devs",
-    "datetime": "2026/06/05 16:00:00 -0700",
-    "duration": "120",
-    "thumbnail": "./resources/thumbnails/2026/2026_day-of-the-devs.png",
-    "links":
-    [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/thegameawards"
-      },
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/thegameawards",
-        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Xbox Games Showcase",
-    "datetime": "2026/06/07 10:00:00 -0700",
-    "duration": "120",
-    "thumbnail": "./resources/thumbnails/2026/2026_xbox-showcase.jpg",
-    "links": [
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/Xbox",
-        "embed": "https://player.twitch.tv/?channel=xbox&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "PlayStation State of Play",
-    "datetime": "2026/06/02 14:00:00 -0700",
-    "duration": "75",
-    "thumbnail": "./resources/thumbnails/2026/2026_06_slaystation-state-of-play.jpg",
-    "links": [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/watch?v=cvh0xXmu0bs",
-        "embed": "https://www.youtube.com/embed/cvh0xXmu0bs"
-      },
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/playstation",
-        "embed": "https://player.twitch.tv/?channel=playstation&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Six One Indie Showcase",
-    "datetime": "2026/05/21 8:50:00 -0700",
-    "duration": "93",
-    "thumbnail": "./resources/thumbnails/2026/2026_six_one_indie_showcase.jpg",
-    "links": [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/watch?v=l2b6H2dyUsw",
-        "embed": "https://www.youtube.com/embed/l2b6H2dyUsw"
-      }
-    ]
-  },
-  {
-    "name": "Wholesome Direct",
-    "datetime": "2026/06/06 9:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_wholesome-direct.jpg",
-    "links": [
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/wholesome_games",
-        "embed": "https://player.twitch.tv/?channel=wholesome_games&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Future Games Show Summer Showcase",
-    "datetime": "2026/06/06 12:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_future-games-show-summer-showcase.jpg",
-    "links": [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/watch?v=hM2Ofso_w0c",
-        "embed": "https://www.youtube.com/embed/hM2Ofso_w0c"
-      },
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/futuregamesshow",
-        "embed": "https://player.twitch.tv/?channel=futuregamesshow&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "PC Gaming Show ",
-    "datetime": "2026/06/07 12:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026-pc-gamer-showcase.jpg",
-    "links": []
-  },
-  {
-    "name": "The Game Awards",
-    "datetime": "2026/12/10 20:00:00 -0700",
-    "duration": "180",
-    "thumbnail": "./resources/thumbnails/2026/2026_the-game-awards.jpg",
-    "links":
-    [
-      {
-        "site": "YouTube",
-        "link": "https://www.youtube.com/thegameawards"
-      },
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/thegameawards",
-        "embed": "https://player.twitch.tv/?channel=thegameawards&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Women-Led Games Showcase",
-    "datetime": "2026/06/04 16:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_women-led-games.png",
-    "links": [
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/womenledgames",
-        "embed": "https://player.twitch.tv/?channel=womenledgames&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "The Latin American Games Showcase",
-    "datetime": "2026/06/04 14:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_latin-american-games-showcase.jpg",
-    "links": [
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/lagshowcase",
-        "embed": "https://player.twitch.tv/?channel=lagshowcase&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "THE MIX SUMMER GAME SHOWCASE",
-    "datetime": "2026/06/01 21:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_the-mix.png",
-    "links": [
-      {
-        "site": "Twitch",
-        "link": "https://www.twitch.tv/mediaindieexchange",
-        "embed": "https://player.twitch.tv/?channel=mediaindieexchange&parent=showcases.neiloru.com"
-      }
-    ]
-  },
-  {
-    "name": "Black Voices in Gaming",
-    "datetime": "2026/06/02 12:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_black-voices-in-gaming.png",
-    "links": []
-  },
-  {
-    "name": "Southeast Asian Games Showcase",
-    "datetime": "2026/06/06 08:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_southeast-asian-games-showcase.png",
-    "links": []
-  },
-  {
-    "name": "Story Rich Showcase",
-    "datetime": "2026/06/06 08:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_story-rich-showcase.jpg",
-    "links": []
-  },
-  {
-    "name": "Green Games Showcase",
-    "datetime": "2026/06/06 11:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_green-games-showcase.png",
-    "links": []
-  },
-  {
-    "name": "Gayming Pride Parade",
-    "datetime": "2026/06/06 12:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_gayming-pride-parade.png",
-    "links": []
-  },
-  {
-    "name": "Frosty Games Showcase",
-    "datetime": "2026/06/06 15:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_forsty-games-showcase.jpg",
-    "links": []
-  },
-  {
-    "name": "Deutsche Indie Showcase",
-    "datetime": "2026/06/07 14:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_deutsche-indie-showcase.png",
-    "links": []
-  },
-  {
-    "name": "India Games Showcase",
-    "datetime": "2026/06/08 10:00:00 -0700",
-    "duration": "60",
-    "thumbnail": "./resources/thumbnails/2026/2026_india-games-showcase.jpg",
-    "links": []
-  }
-]
+{
+  "year": "2026",
+  "showcases": [
+    {
+      "name": "Summer Game Fest",
+      "datetime": "2026/06/05 14:00:00 -0700",
+      "duration": "120",
+      "thumbnail": "./data/2026/20260605_summer-games-fest/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/thegameawards",
+        "https://www.twitch.tv/thegameawards"
+      ]
+    },
+    {
+      "name": "Day of the Devs",
+      "datetime": "2026/06/05 16:00:00 -0700",
+      "duration": "120",
+      "thumbnail": "./data/2026/20260605_day-of-the-devs/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/thegameawards",
+        "https://www.twitch.tv/thegameawards"
+      ]
+    },
+    {
+      "name": "Xbox Games Showcase",
+      "datetime": "2026/06/07 10:00:00 -0700",
+      "duration": "120",
+      "thumbnail": "./data/2026/20260607_xbox-games-showcase/thumbnail.png",
+      "links": [
+        "https://www.twitch.tv/Xbox"
+      ]
+    },
+    {
+      "name": "PlayStation State of Play",
+      "datetime": "2026/06/02 14:00:00 -0700",
+      "duration": "75",
+      "thumbnail": "./data/2026/20260602_playstation-state-of-play/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/watch?v=cvh0xXmu0bs",
+        "https://www.twitch.tv/playstation"
+      ]
+    },
+    {
+      "name": "Six One Indie Showcase",
+      "datetime": "2026/05/21 8:50:00 -0700",
+      "duration": "93",
+      "thumbnail": "./data/2026/20260521_six_one_indie_showcase/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/watch?v=l2b6H2dyUsw"
+      ]
+    },
+    {
+      "name": "Wholesome Direct",
+      "datetime": "2026/06/06 9:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_wholesome-direct/thumbnail.png",
+      "links": [
+        "https://www.twitch.tv/wholesome_games"
+      ]
+    },
+    {
+      "name": "Future Games Show Summer Showcase",
+      "datetime": "2026/06/06 12:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_future-games-show-summer-showcase/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/watch?v=hM2Ofso_w0c",
+        "https://www.twitch.tv/futuregamesshow"
+      ]
+    },
+    {
+      "name": "PC Gaming Show",
+      "datetime": "2026/06/07 12:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260607_pc-gaming-show/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "The Game Awards",
+      "datetime": "2026/12/10 20:00:00 -0700",
+      "duration": "180",
+      "thumbnail": "./data/2026/20261210_the-game-awards/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/thegameawards",
+        "https://www.twitch.tv/thegameawards"
+      ]
+    },
+    {
+      "name": "Women-Led Games Showcase",
+      "datetime": "2026/06/04 16:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260604_women-led-games-showcase/thumbnail.png",
+      "links": [
+        "https://www.twitch.tv/womenledgames"
+      ]
+    },
+    {
+      "name": "The Latin American Games Showcase",
+      "datetime": "2026/06/04 14:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260604_the-latin-american-games-showcase/thumbnail.png",
+      "links": [
+        "https://www.twitch.tv/lagshowcase"
+      ]
+    },
+    {
+      "name": "THE MIX SUMMER GAME SHOWCASE",
+      "datetime": "2026/06/01 08:45:00 -0700",
+      "duration": "75",
+      "thumbnail": "./data/2026/20260601_the-mix-summer-game-showcase/thumbnail.png",
+      "links": [
+        "https://www.youtube.com/watch?v=mDrFl1ocXv8",
+        "https://www.twitch.tv/mediaindieexchange"
+      ]
+    },
+    {
+      "name": "Black Voices in Gaming",
+      "datetime": "2026/06/02 12:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260602_black-voices-in-gaming/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Southeast Asian Games Showcase",
+      "datetime": "2026/06/06 08:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_southeast-asian-games-showcase/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Story Rich Showcase",
+      "datetime": "2026/06/06 08:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_story-rich-showcase/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Green Games Showcase",
+      "datetime": "2026/06/06 11:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_green-games-showcase/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Gayming Pride Parade",
+      "datetime": "2026/06/06 12:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_gayming-pride-parade/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Frosty Games Showcase",
+      "datetime": "2026/06/06 15:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260606_forsty-games-showcase/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "Deutsche Indie Showcase",
+      "datetime": "2026/06/07 14:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260607_deutsche-indie-showcase/thumbnail.png",
+      "links": []
+    },
+    {
+      "name": "India Games Showcase",
+      "datetime": "2026/06/08 10:00:00 -0700",
+      "duration": "60",
+      "thumbnail": "./data/2026/20260608_india-games-showcase/thumbnail.png",
+      "links": []
+    }
+  ]
+}
