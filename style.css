@@ -198,3 +198,77 @@ html, body {
     background-color: #121212;
     overflow-y: auto;
 }
+
+.main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.games-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 20px 20px;
+}
+
+.game-item {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.game-embed-wrapper {
+    width: 350px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.game-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 16px 16px 0;
+}
+
+.game-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.game-release-date {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.game-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.game-platform {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.game-platform:hover {
+    color: white;
+    background-color: #444;
+}

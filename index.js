@@ -20,6 +20,22 @@ async function fetchShowcases() {
     }
 }
 
+async function fetchGames(shocaseId) {
+
+    try {
+        const response = await fetch(`./data/2026/${shocaseId}/games.json`);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch games for showcase ${shocaseId}: ${response.status}`);
+        }
+        const games = await response.json();
+        console.log(`Games loaded for showcase ${shocaseId}:`, games);
+        return games;
+    } catch (error) {
+        console.error('Error loading games for showcase', shocaseId, error);
+        return [];
+    }
+}
+
 function createShowcaseId(showcase) {
     const date = new Date(showcase.datetime);
     const yyyy = date.getFullYear();
@@ -214,6 +230,8 @@ function renderShowcaseList(data, scrollToLive = true) {
                 document.getElementById('topbar-showcases-title').textContent = showcase.name;
                 document.title = showcase.name;
                 openIFrame(showcase);
+                document.getElementById("games-list").innerHTML = "";
+                renderGamesList(activeShowcaseId);
             });
 
             list.appendChild(li);
@@ -266,7 +284,6 @@ function openUpcomingShowcase() {
     document.title = upcomingShowcase.name;
 
     openIFrame(upcomingShowcase);
-
 }
 
 function getDomainFromLink(link) {
@@ -331,6 +348,164 @@ function openIFrame(showcase) {
     playerSection.appendChild(wrapper);
 }
 
+async function renderGamesList(showcaseId) {
+
+    if(showcaseId === null) 
+        return;
+
+    const gamesList = document.getElementById("games-list");
+    let games = await fetchGames(showcaseId);
+
+    const existingItems = gamesList.querySelectorAll(".game-item");
+
+    // Remove extra items if the new list is shorter
+    while (existingItems.length > games.length) {
+        gamesList.removeChild(gamesList.lastElementChild);
+    }
+
+    for(let i = 0; i < games.length; i++) {
+        let game = games[i];
+        let li = existingItems[i];
+
+        if (li) {
+            // Update existing item - only change text/attributes, not embeds
+            let nameEl = li.querySelector(".game-name");
+            if (nameEl && nameEl.textContent !== game.name) {
+                nameEl.textContent = game.name;
+            }
+
+            let dateEl = li.querySelector(".game-release-date");
+            let dateText = game.release_date || "TBA";
+            if (dateEl && dateEl.textContent !== dateText) {
+                dateEl.textContent = dateText;
+            }
+
+            // Update embed only if trailer URL changed
+            let embedWrapper = li.querySelector(".game-embed-wrapper");
+            let existingIframe = embedWrapper.querySelector(".game-embed");
+            let existingTrailer = li.dataset.trailer || "";
+            if (existingTrailer !== (game.trailer || "")) {
+                embedWrapper.innerHTML = "";
+                if (game.trailer) {
+                    let domain = getDomainFromLink(game.trailer);
+                    let iframe = document.createElement("iframe");
+                    iframe.className = "game-embed";
+                    if (domain === "youtube.com")
+                        iframe.src = buildYouYubeEmbedUrl(game.trailer).replace("autoplay=1&mute=1", "autoplay=0");
+                    else if (domain === "twitch.tv")
+                        iframe.src = buildTwitchEmbedUrl(game.trailer).replace("autoplay=1&muted=1", "autoplay=0");
+                    iframe.allow = "encrypted-media";
+                    iframe.allowFullscreen = true;
+                    iframe.frameBorder = "0";
+                    embedWrapper.appendChild(iframe);
+                }
+                li.dataset.trailer = game.trailer || "";
+            }
+
+            // Update platforms
+            let platformsEl = li.querySelector(".game-platforms");
+            let newPlatforms = (game.platforms || []).map(p => {
+                let name = typeof p === "string" ? p : p.platform;
+                let store = typeof p === "object" ? p.store : "";
+                return name ? (name + "|" + store) : null;
+            }).filter(Boolean).join(",");
+            let oldPlatforms = li.dataset.platforms || "";
+
+            if (oldPlatforms !== newPlatforms) {
+                let info = li.querySelector(".game-info");
+                if (platformsEl) platformsEl.remove();
+
+                if (game.platforms && game.platforms.length > 0) {
+                    let platforms = document.createElement("div");
+                    platforms.className = "game-platforms";
+                    for (let j = 0; j < game.platforms.length; j++) {
+                        let p = game.platforms[j];
+                        let platformName = typeof p === "string" ? p : p.platform;
+                        if (!platformName) continue;
+                        let storeUrl = typeof p === "object" ? p.store : "";
+                        let badge = document.createElement("a");
+                        badge.className = "game-platform";
+                        badge.textContent = platformName + "↗";
+                        if (storeUrl) {
+                            badge.href = storeUrl;
+                            badge.target = "_blank";
+                            badge.rel = "noopener noreferrer";
+                        }
+                        platforms.appendChild(badge);
+                    }
+                    info.appendChild(platforms);
+                }
+                li.dataset.platforms = newPlatforms;
+            }
+        } else {
+            // Create new item
+            li = document.createElement("li");
+            li.className = "game-item";
+
+            let embedWrapper = document.createElement("div");
+            embedWrapper.className = "game-embed-wrapper";
+
+            if (game.trailer) {
+                let domain = getDomainFromLink(game.trailer);
+                let iframe = document.createElement("iframe");
+                iframe.className = "game-embed";
+                if (domain === "youtube.com")
+                    iframe.src = buildYouYubeEmbedUrl(game.trailer).replace("autoplay=1&mute=1", "autoplay=0");
+                else if (domain === "twitch.tv")
+                    iframe.src = buildTwitchEmbedUrl(game.trailer).replace("autoplay=1&muted=1", "autoplay=0");
+                iframe.allow = "encrypted-media";
+                iframe.allowFullscreen = true;
+                iframe.frameBorder = "0";
+                embedWrapper.appendChild(iframe);
+            }
+            li.dataset.trailer = game.trailer || "";
+
+            let info = document.createElement("div");
+            info.className = "game-info";
+
+            let name = document.createElement("h3");
+            name.className = "game-name";
+            name.textContent = game.name;
+            info.appendChild(name);
+
+            let releaseDate = document.createElement("p");
+            releaseDate.className = "game-release-date";
+            releaseDate.textContent = game.release_date || "TBA";
+            info.appendChild(releaseDate);
+
+            if (game.platforms && game.platforms.length > 0) {
+                let platforms = document.createElement("div");
+                platforms.className = "game-platforms";
+                for (let j = 0; j < game.platforms.length; j++) {
+                    let p = game.platforms[j];
+                    let platformName = typeof p === "string" ? p : p.platform;
+                    if (!platformName) continue;
+                    let storeUrl = typeof p === "object" ? p.store : "";
+                    let badge = document.createElement("a");
+                    badge.className = "game-platform";
+                    badge.textContent = platformName + "↗";
+                    if (storeUrl) {
+                        badge.href = storeUrl;
+                        badge.target = "_blank";
+                        badge.rel = "noopener noreferrer";
+                    }
+                    platforms.appendChild(badge);
+                }
+                info.appendChild(platforms);
+                li.dataset.platforms = game.platforms.map(p => {
+                    let n = typeof p === "string" ? p : p.platform;
+                    let s = typeof p === "object" ? p.store : "";
+                    return n ? (n + "|" + s) : null;
+                }).filter(Boolean).join(",");
+            }
+
+            li.appendChild(embedWrapper);
+            li.appendChild(info);
+            gamesList.appendChild(li);
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
     data = await fetchShowcases();
 
@@ -339,6 +514,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderSidebarTitle(data);
     renderShowcaseList(data);
     openUpcomingShowcase();
+    await renderGamesList(activeShowcaseId);
 
     setInterval(async () => {
         const newData = await fetchShowcases();
@@ -348,6 +524,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         data = newData;
 
         renderShowcaseList(data, false);
+        await renderGamesList(activeShowcaseId);
 
         // Re-apply active state without reloading the player
         if (activeShowcaseId) {
