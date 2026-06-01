@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game List Editor</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+
+        .toolbar button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-primary {
+            background: #e94560;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #c73652;
+        }
+
+        .btn-secondary {
+            background: #16213e;
+            color: #e0e0e0;
+            border: 1px solid #0f3460 !important;
+        }
+
+        .btn-secondary:hover {
+            background: #0f3460;
+        }
+
+        .btn-danger {
+            background: #6b1525;
+            color: #e0e0e0;
+        }
+
+        .btn-danger:hover {
+            background: #8f1c32;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 4px;
+        }
+
+        /* Hidden file input */
+        #import-input {
+            display: none;
+        }
+
+        /* Game list */
+        #game-list {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .game-card {
+            background: #16213e;
+            border: 1px solid #0f3460;
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .game-card .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .game-card .card-header .game-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: #e94560;
+        }
+
+        .game-card .card-header .card-actions {
+            display: flex;
+            gap: 6px;
+        }
+
+        /* Form rows */
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 12px;
+        }
+
+        .form-row label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #8a8a9a;
+            margin-bottom: 4px;
+        }
+
+        .form-row input {
+            padding: 8px 12px;
+            border: 1px solid #0f3460;
+            border-radius: 4px;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            font-size: 14px;
+        }
+
+        .form-row input:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        /* Platforms section */
+        .platforms-section {
+            margin-top: 8px;
+            border-top: 1px solid #0f3460;
+            padding-top: 12px;
+        }
+
+        .platforms-section .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .platforms-section .section-header h4 {
+            margin: 0;
+            color: #8a8a9a;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .platform-entry {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .platform-entry input {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1px solid #0f3460;
+            border-radius: 4px;
+            background: #1a1a2e;
+            color: #e0e0e0;
+            font-size: 13px;
+        }
+
+        .platform-entry input:focus {
+            outline: none;
+            border-color: #e94560;
+        }
+
+        .platform-entry input:first-child {
+            flex: 0.5;
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #555;
+        }
+
+        .empty-state p {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .empty-state span {
+            font-size: 13px;
+            color: #444;
+        }
+
+        /* Game count */
+        .game-count {
+            text-align: center;
+            color: #555;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 Game List Editor</h1>
+
+    <div class="toolbar">
+        <button class="btn-primary" id="btn-add-game">+ Add Game</button>
+        <button class="btn-secondary" id="btn-import">Import JSON</button>
+        <button class="btn-secondary" id="btn-export">Export JSON</button>
+        <button class="btn-danger" id="btn-clear">Clear All</button>
+        <input type="file" id="import-input" accept=".json">
+    </div>
+
+    <div class="game-count" id="game-count"></div>
+    <div id="game-list"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

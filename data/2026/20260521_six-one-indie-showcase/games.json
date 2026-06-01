@@ -1,0 +1,757 @@
+[
+  {
+    "name": "The Big Con",
+    "release_date": "2021/08/31",
+    "trailer": "https://www.youtube.com/watch?v=rM0uOgkDEnQ",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1139280/The_Big_Con/"
+      },
+      {
+        "platform": "PlayStation",
+        "store": "https://store.playstation.com/de-de/product/EP4630-PPSA15392_00-0039174128756650"
+      },
+      {
+        "platform": "Switch",
+        "store": "https://www.nintendo.com/us/store/products/the-big-con-grift-of-the-year-edition-switch/?srsltid=AfmBOoqKbcuYoobbO-rNiuAqFpP6eOZpdgZtue3ZPg891-sRswbIOyff"
+      },
+      {
+        "platform": "Xbox",
+        "store": "https://www.xbox.com/de-DE/games/store/the-big-con/9p01r01zj9bx"
+      }
+    ]
+  },
+  {
+    "name": "Well Keeper",
+    "release_date": "2026/04/23",
+    "trailer": "https://www.youtube.com/watch?v=OMARz-xaBYo",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3365940/Well_Keeper/"
+      }
+    ]
+  },
+  {
+    "name": "HYPNOS",
+    "release_date": "2026/05/06",
+    "trailer": "https://www.youtube.com/watch?v=Ns0uVf79O04",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2861210/HYPNOS/"
+      }
+    ]
+  },
+  {
+    "name": "Wax Heads",
+    "release_date": "2026/05/05",
+    "trailer": "https://www.youtube.com/watch?v=rYstDyhkGVM",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2769240/Wax_Heads/"
+      },
+      {
+        "platform": "PlayStation",
+        "store": "https://www.playstation.com/de-de/games/wax-heads/"
+      },
+      {
+        "platform": "Switch",
+        "store": "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Wax-Heads-3080902.html?srsltid=AfmBOoqONZwXuwMNcB5tvceNVRGz0VXKGB5EWwsoXSPI0i7UkOtOXwnQ"
+      },
+      {
+        "platform": "Xbox",
+        "store": "https://www.xbox.com/de-de/games/store/wax-heads/9n1k3mj9mqg8"
+      }
+    ]
+  },
+  {
+    "name": "Spirit Swap: Lofi Beats to Match-3 To",
+    "release_date": "2025/02/03",
+    "trailer": "https://www.youtube.com/watch?v=KQo6prum-5k",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To/"
+      },
+      {
+        "platform": "Xbox",
+        "store": "https://www.xbox.com/de-DE/games/store/spirit-swap-lofi-beats-zu-match-3-en/9ns3x5vfjvxq"
+      },
+      {
+        "platform": "Switch",
+        "store": "https://www.nintendo.com/de-de/Spiele/Nintendo-Switch-Download-Software/Spirit-Swap-Lofi-Beats-to-Match-3-To-3106069.html?srsltid=AfmBOoqOetgsSttyA5v3OZgQeIZSYQtRQ--QH8tcMhgiTvyBEENkAixr"
+      }
+    ]
+  },
+  {
+    "name": "Blue Ridge Hunting",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=d_2AhUfcmfc",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2434930/Blue_Ridge_Hunting/"
+      }
+    ]
+  },
+  {
+    "name": "SacriFire",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=JRxXTzl8-Z4",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1661330/SacriFire/"
+      },
+      {
+        "platform": "GOG",
+        "store": "https://www.gog.com/en/game/sacrifire"
+      }
+    ]
+  },
+  {
+    "name": "Feather's Edge",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=UtkZAOveLw8",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3804760/Feathers_Edge/"
+      }
+    ]
+  },
+  {
+    "name": "Aikyam",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=Z-2uioUn7ZI",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2363840/Aikyam/"
+      }
+    ]
+  },
+  {
+    "name": "Sonnet",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=0yOL-RK4Rv4",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/4589630/Sonnet/"
+      }
+    ]
+  },
+  {
+    "name": "Twins of Olus",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=XhKsGjsCJec",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2707630/Twins_of_Olus/"
+      }
+    ]
+  },
+  {
+    "name": "The Well's Blessing",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=DtfZlMVEVhQ",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3637250/The_Wells_Blessing/"
+      }
+    ]
+  },
+  {
+    "name": "HIPS N NOSES",
+    "release_date": "Q1 2027",
+    "trailer": "https://www.youtube.com/watch?v=xffEyd5HpTI",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3574200/HIPS_N_NOSES/"
+      }
+    ]
+  },
+  {
+    "name": "RollerGirl",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=lnx-Ac2V2yE",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2828540/RollerGirl/"
+      }
+    ]
+  },
+  {
+    "name": "Death Pong",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=4eDjK-qDocY",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/4132010/Death_Pong/"
+      }
+    ]
+  },
+  {
+    "name": "Midnight Horde",
+    "release_date": "Q3 2026",
+    "trailer": "https://www.youtube.com/watch?v=Q1k-xLkRA7A",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/864170/Midnight_Horde/"
+      }
+    ]
+  },
+  {
+    "name": "Vale's Echo",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=ojL4RVWmOxI",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3564990/Vales_Echo/"
+      }
+    ]
+  },
+  {
+    "name": "Abide",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=LzocMVCfOXU",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/4289310/ABIDE/"
+      }
+    ]
+  },
+  {
+    "name": "Sucker for Love: Crush Landing",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=F9OsHxwyOR0",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3848900/Sucker_for_Love_Crush_Landing/"
+      }
+    ]
+  },
+  {
+    "name": "Mayak",
+    "release_date": "2027",
+    "trailer": "https://www.youtube.com/watch?v=vnYQ3qw-yj0",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3910330/Mayak/"
+      }
+    ]
+  },
+  {
+    "name": "Deep Pixel Melancholy",
+    "release_date": " Q3 2026",
+    "trailer": "https://www.youtube.com/watch?v=gfm8BckxJm8",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3694190/Deep_Pixel_Melancholy/"
+      }
+    ]
+  },
+  {
+    "name": "Rain98",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=rvE9g-UOSsQ",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3498720/Rain98/"
+      }
+    ]
+  },
+  {
+    "name": "MÖRK BORG Heresy Supreme",
+    "release_date": "2026/05/21",
+    "trailer": "https://www.youtube.com/watch?v=UR8a3PeQpqM",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3216800/MRK_BORG_Heresy_Supreme/"
+      }
+    ]
+  },
+  {
+    "name": "Black Jacket",
+    "release_date": "2026/05/12",
+    "trailer": "https://www.youtube.com/watch?v=py_ittT9iqE",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3100370/Black_Jacket/"
+      }
+    ]
+  },
+  {
+    "name": "Blocks for Babies",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=hVhTiO8xdXo",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2776770/Blocks_for_Babies/"
+      }
+    ]
+  },
+  {
+    "name": "KAZ",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=U9BgPAxwdl8",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3633760/KAZ/"
+      }
+    ]
+  },
+  {
+    "name": "Ourlands",
+    "release_date": "2026/06/02",
+    "trailer": "https://www.youtube.com/watch?v=tyHJhj7Zk4A",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2074470/Ourlands/"
+      },
+      {
+        "platform": "Epic Games",
+        "store": "https://store.epicgames.com/p/ourlands-249335"
+      }
+    ]
+  },
+  {
+    "name": "Treetopians",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=IG9PvUDjf_o",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3967310/Treetopians/"
+      }
+    ]
+  },
+  {
+    "name": "Go North",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=-rgwywjIWe0",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3041730/Go_North/"
+      },
+      {
+        "platform": "Xbox",
+        "store": ""
+      },
+      {
+        "platform": "Switch",
+        "store": ""
+      }
+    ]
+  },
+  {
+    "name": "FORKLIFT FLOWERPOT: Botanical Investigator",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=Yhf8YWhCmJk",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2073330/FORKLIFT_FLOWERPOT_Botanical_Investigator/"
+      }
+    ]
+  },
+  {
+    "name": "Mouseward",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=JUmCEFiYbes",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1188410/Mouseward/"
+      }
+    ]
+  },
+  {
+    "name": "Graytail",
+    "release_date": "Q2 2027",
+    "trailer": "https://www.youtube.com/watch?v=3fyomDTHUm4",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2888960/Graytail/"
+      }
+    ]
+  },
+  {
+    "name": "Isle of Reveries",
+    "release_date": "2026/09",
+    "trailer": "https://www.youtube.com/watch?v=6urYy9mS1QI",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3100970/Isle_of_Reveries/"
+      }
+    ]
+  },
+  {
+    "name": "Please Insert Disc",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=UwRf3jI7dKg",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2855360/Please_Insert_Disc/"
+      }
+    ]
+  },
+  {
+    "name": "lunr.rdio.taxi",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=hpwInUNRnt4",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3644540/lunrrdiotaxi/"
+      }
+    ]
+  },
+  {
+    "name": "PRISON OF HUSKS",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=n8kN9YexdUY",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2975260/PRISON_OF_HUSKS/"
+      }
+    ]
+  },
+  {
+    "name": "Painted Kingdoms: Tower Defense & Firefighting",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=JhE8lYL8Bl4",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3596730/Painted_Kingdoms_Tower_Defense__Firefighting/"
+      }
+    ]
+  },
+  {
+    "name": "Pirofauna",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=qmKjxDAm1Oo",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2984150/Pirofauna/"
+      }
+    ]
+  },
+  {
+    "name": "Cards & Cannons",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=Mo7Hxzf88j8",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/4536920/Cards__Cannons/"
+      }
+    ]
+  },
+  {
+    "name": "Cutout Village",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=FNH33XRR8SA",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3907910/Cutout_Village/"
+      },
+      {
+        "platform": "PlayStation",
+        "store": "https://store.playstation.com/de-de/concept/10017400/"
+      },
+      {
+        "platform": "Xbox",
+        "store": ""
+      },
+      {
+        "platform": "Switch",
+        "store": ""
+      }
+    ]
+  },
+  {
+    "name": "Gang of Frogs",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=Xu2ZpeWNang",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3081510/Gang_of_Frogs/"
+      }
+    ]
+  },
+  {
+    "name": "Kaiju Cleanup",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=EP_SNaJY3TU",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3729700/Kaiju_Cleanup/"
+      }
+    ]
+  },
+  {
+    "name": "Punch Lunch: Foodtruck Fighter",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=iH8Jel8Ix80",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3976200/Punch_Lunch_Foodtruck_Fighter/"
+      }
+    ]
+  },
+  {
+    "name": "Re:Rite",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=PQknGUTc7nk",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3133520/ReRite/"
+      }
+    ]
+  },
+  {
+    "name": "Fraymakers x Spelunky",
+    "release_date": "2023/01/19",
+    "trailer": "https://www.youtube.com/watch?v=N-h5hM0Fwi0",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1420350/Fraymakers/"
+      }
+    ]
+  },
+  {
+    "name": "Necrowave",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=mJdLXD7rb4Y",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1735370/Necrowave/"
+      }
+    ]
+  },
+  {
+    "name": "Jupiter Junkworks",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=Y0bPgotQqeE",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/2913540/Jupiter_Junkworks/"
+      }
+    ]
+  },
+  {
+    "name": "Sloppy Forgeries",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=twirxPwAfyg",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3030560/Sloppy_Forgeries/"
+      }
+    ]
+  },
+  {
+    "name": "Walk The Frog",
+    "release_date": "2026/05/21",
+    "trailer": "https://www.youtube.com/watch?v=E-rvBNwQ3qQ",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3336240/Walk_The_Frog/"
+      }
+    ]
+  },
+  {
+    "name": "Muri: Wildwoods",
+    "release_date": "2026/06",
+    "trailer": "https://www.youtube.com/watch?v=xby_bS0lqDU",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3284200/Muri_Wildwoods/"
+      }
+    ]
+  },
+  {
+    "name": "b-e-e-t-l-e: be right back!",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=S-seTlTggGI",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3993200/beetle_be_right_back/"
+      }
+    ]
+  },
+  {
+    "name": "The Marvelous Raincaster of Yell Holler",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=5WHOpBo_dOA",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3800300/The_Marvelous_Raincaster_of_Yell_Holler/"
+      }
+    ]
+  },
+  {
+    "name": "RMF's Ragdoll Physics Experiments",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=HONu-p2rFkg",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3337130/RMFs_Ragdoll_Physics_Experiments/"
+      }
+    ]
+  },
+  {
+    "name": "Bad Badger",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=TOxXsAqoTlA",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/1644050/Bad_Badger/"
+      }
+    ]
+  },
+  {
+    "name": "Flip-Flop Fury",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=FadjU_3j4GQ",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3608830/FlipFlop_Fury/"
+      }
+    ]
+  },
+  {
+    "name": "Being Food",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=exyQ9-dMFSw",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3575440/Being_Food/"
+      }
+    ]
+  },
+  {
+    "name": "Grave Seasons",
+    "release_date": "2026/08/14",
+    "trailer": "https://www.youtube.com/watch?v=NyHnYrkFYCM",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3255110/Grave_Seasons/"
+      },
+      {
+        "platform": "Xbox",
+        "store": "https://www.xbox.com/de-DE/games/store/grave-seasons/9n36kgdxkm0s"
+      }
+    ]
+  },
+  {
+    "name": "Agni: Village of Calamity",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=yUeN3YaXaMU",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3151360/Agni_Village_of_Calamity/"
+      },
+      {
+        "platform": "Epic Games",
+        "store": ""
+      },
+      {
+        "platform": "PlayStation",
+        "store": "https://store.playstation.com/de-de/concept/10019121/"
+      },
+      {
+        "platform": "Xbox",
+        "store": "https://www.xbox.com/en-us/games/store/agni-village-of-calamity/9mxh853mlv8b"
+      }
+    ]
+  },
+  {
+    "name": "After Hell Freezes Over",
+    "release_date": "2026",
+    "trailer": "https://www.youtube.com/watch?v=xHI_NUMVt64",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3597340/After_Hell_Freezes_Over/"
+      }
+    ]
+  },
+  {
+    "name": "The Florist",
+    "release_date": "",
+    "trailer": "https://www.youtube.com/watch?v=V9SK6nh3Tu0",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/3152440/The_Florist/"
+      },
+      {
+        "platform": "PlayStation",
+        "store": "https://store.playstation.com/de-de/concept/10015248"
+      },
+      {
+        "platform": "Switch 2",
+        "store": ""
+      }
+    ]
+  },
+  {
+    "name": "ANOMALITH",
+    "release_date": "2026/10/28",
+    "trailer": "https://www.youtube.com/watch?v=rtDRe5Uv0qg",
+    "platforms": [
+      {
+        "platform": "Steam",
+        "store": "https://store.steampowered.com/app/4017880/ANOMALITH/"
+      }
+    ]
+  }
+]
