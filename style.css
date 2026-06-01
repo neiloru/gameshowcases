@@ -15,7 +15,7 @@ html, body {
 }
 
 .sidebar {
-    width: 350px;
+    width: 365px;
     background-color: #121212;
     color: #ecf0f1;
     flex-shrink: 0;
@@ -280,13 +280,13 @@ html, body {
 }
 
 .game-name {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    color: #ecf0f1;
+    color: #CCCCCC;
 }
 
 .game-release-date {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.7);
 }
 
