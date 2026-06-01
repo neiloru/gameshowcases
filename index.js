@@ -383,9 +383,49 @@ function createTrailerToggle(trailerUrl) {
     return { btn, embedWrapper };
 }
 
+function formatReleaseDate(dateStr) {
+    if (!dateStr || dateStr.trim() === "") {
+        return "TBA";
+    }
+
+    // If starts with Q (like "Q1 2026" or "Q3 2026"), leave as-is
+    if (/^Q\d/i.test(dateStr.trim())) {
+        return dateStr;
+    }
+
+    // Try to parse as a date (covers YYYY/MM/DD, YYYY/MM, etc.)
+    const parsed = new Date(dateStr);
+    if (!isNaN(parsed.getTime())) {
+        // If it looks like just a year (e.g. "2026"), don't localize
+        if (/^\d{4}$/.test(dateStr.trim())) {
+            return dateStr;
+        }
+
+        // Otherwise format with locale
+        return parsed.toLocaleDateString(undefined, {
+            year: 'numeric',
+            month: 'long',
+            day: dateStr.split('/').length > 2 ? 'numeric' : undefined
+        });
+    }
+
+    // Fallback: return as-is
+    return dateStr;
+}
+
+function buildThumbnailUrl(game, showcaseId) {
+    let slug = null
+    slug = game.name.toLowerCase()
+    slug = slug.replace(/\s+/g, '-');
+    slug = slug.replace(/[^a-z0-9\-]/g, '');
+
+    //slug = slug.replace(/^-|-$/g, '');
+    return slug;
+}
+
 async function renderGamesList(showcaseId) {
 
-    if(showcaseId === null) 
+    if(showcaseId === null)
         return;
 
     const gamesList = document.getElementById("games-list");
@@ -409,8 +449,21 @@ async function renderGamesList(showcaseId) {
                 nameEl.textContent = game.name;
             }
 
+            // Update thumbnail
+            let thumbEl = li.querySelector(".game-thumbnail");
+            if (thumbEl) {
+
+                let slug = buildThumbnailUrl(game, showcaseId);
+                let newSrc = `./data/2026/${showcaseId}/game_thumbnails/${slug}.png`;
+                if (thumbEl.src !== newSrc) {
+                    thumbEl.src = newSrc;
+                    thumbEl.alt = game.name;
+                }
+            }
+
+
             let dateEl = li.querySelector(".game-release-date");
-            let dateText = game.release_date || "TBA";
+            let dateText = formatReleaseDate(game.release_date);
             if (dateEl && dateEl.textContent !== dateText) {
                 dateEl.textContent = dateText;
             }
@@ -477,6 +530,12 @@ async function renderGamesList(showcaseId) {
             li = document.createElement("li");
             li.className = "game-item";
 
+            let thumbnail = document.createElement("img");
+            let slug = buildThumbnailUrl(game, showcaseId);
+            thumbnail.src = `./data/2026/${showcaseId}/game_thumbnails/${slug}.png`;
+            thumbnail.alt = game.name;
+            thumbnail.classList.add("game-thumbnail");
+
             let info = document.createElement("div");
             info.className = "game-info";
 
@@ -492,7 +551,7 @@ async function renderGamesList(showcaseId) {
 
             let releaseDate = document.createElement("p");
             releaseDate.className = "game-release-date";
-            releaseDate.textContent = game.release_date || "TBA";
+            releaseDate.textContent = formatReleaseDate(game.release_date);
             infoLeft.appendChild(releaseDate);
 
             info.appendChild(infoLeft);
@@ -526,9 +585,11 @@ async function renderGamesList(showcaseId) {
             if (game.trailer) {
                 let { btn, embedWrapper } = createTrailerToggle(game.trailer);
                 info.appendChild(btn);
+                info.insertBefore(thumbnail, infoLeft);
                 li.appendChild(info);
                 li.appendChild(embedWrapper);
             } else {
+                info.insertBefore(thumbnail, infoLeft);
                 li.appendChild(info);
             }
             li.dataset.trailer = game.trailer || "";
